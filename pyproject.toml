@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "stonks"
+version = "0.1.0"
+description = ""
+authors = ["ठटायो <ठटायो@ठटायो.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10.6"
+sentence-transformers = "^2.2.2"
+langchain = "^0.0.270"
+pypdf = "^3.15.2"
+chromadb = "^0.4.6"
+pypdfium2 = "^4.19.0"
+pytesseract = "^0.3.10"
+tesseract = "^0.1.3"
+load-dotenv = "^0.1.0"
+openai = "^0.27.9"
+streamlit = "^1.26.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
