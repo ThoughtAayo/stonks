@@ -16,7 +16,7 @@
 - After poety is setup, run `poetry shell` from root folder
 - Run `poetry install` to install project dependencies
 - In `.env` file edit `SAMPLE_FILE_PATH` field to point to your sample pdf file
-- run `poetry run stonks/app.py` to run the project
+- run `streamlit run stonks/app.py` to run the project
 
 ## Readings
 

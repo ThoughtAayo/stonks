@@ -27,7 +27,7 @@ def convert_pdf_to_images(file_path, scale=300/72):
 
     return final_images
 
-def extract_text_from_img(list_dict_final_images):
+def extract_text_from_img(list_dict_final_images) -> list:
     """Extract text from images via pytesseract"""
     image_list = [list(data.values())[0] for data in list_dict_final_images]
     image_content = []
@@ -36,8 +36,7 @@ def extract_text_from_img(list_dict_final_images):
         image = Image.open(BytesIO(image_bytes))
         raw_text = str(image_to_string(image))
         image_content.append(raw_text)
-
-    return "\n".join(image_content)
+    return image_content
 
 def extract_content_from_url(url: str):
     """connect pdf to image and image to text functions to generate pdf -> image -> text"""
