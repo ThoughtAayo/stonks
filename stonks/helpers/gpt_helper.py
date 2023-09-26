@@ -2,6 +2,7 @@ from langchain.chat_models import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 
+
 def extract_structured_data(content: str):
     """Extract structured info from text via LLM"""
     llm = ChatOpenAI(temperature=0, model="gpt-3.5-turbo-0613")
@@ -25,6 +26,7 @@ def extract_structured_data(content: str):
     results = chain.run(content=content)
 
     return results
+
 
 def query(dataset: str, question: str):
     """Extract structured info from text via LLM"""

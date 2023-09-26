@@ -161,10 +161,9 @@ cython_debug/
 
 
 # user defined 
-stonks/storage/raw_data/*
-stonks/storage/vector_db/*
-stonks/storage/gpt_results/*
+
 stonks/temp/*
 chroma_db/*
 chroma/*
 tempFiles/*
+storage**
